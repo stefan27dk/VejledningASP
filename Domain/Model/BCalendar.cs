@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Domain.Model
 {
-    class BCalendar
+    public class BCalendar
     {
+        public int Id { get; set; }
+        public ICollection<Hold> Holds { get; set; }
     }
 }

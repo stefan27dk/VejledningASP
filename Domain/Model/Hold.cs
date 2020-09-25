@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Domain.Model
 {
-    class Hold
+    public class Hold
     {
+        public int Id { get; set; }
+
     }
 }

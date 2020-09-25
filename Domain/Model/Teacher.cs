@@ -4,7 +4,12 @@ using System.Text;
 
 namespace Domain.Model
 {
-    class Teacher
+    public class Teacher
     {
+        public int Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+
+        public ICollection<Hold> Holds { get; set; }
     }
 }

@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Domain.Model
 {
-    class Timeslot
+   public class Timeslot
     {
+        public int Id { get; set; }
+        public BCalendar BCalendar { get; set; }
     }
 }
