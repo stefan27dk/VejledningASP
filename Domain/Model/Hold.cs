@@ -6,7 +6,6 @@ namespace Domain.Model
 {
     public class Hold
     {
-        public int Id { get; set; }
-
+        public int Id { get; set; }      
     }
 }
