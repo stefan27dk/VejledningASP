@@ -6,6 +6,14 @@ namespace Domain.Model
 {
     public class Booking
     {
-        public int Id { get; set; }
+
+        public Booking(Guid Id) // Constructor
+        {
+            this.Id = Id;
+        }
+
+
+
+        public Guid Id { get; private set; }
     }
 }

@@ -6,7 +6,14 @@ namespace Domain.Model
 {
    public class Timeslot
     {
-        public int Id { get; set; }
-        public BCalendar BCalendar { get; set; }
+        public Guid Id { get; private set; }
+        public BCalendar BCalendar { get; private set; }
+
+        public Timeslot(Guid Id, BCalendar BCalendar)  // Constructor
+        {
+            this.Id = Id;
+            this.BCalendar = BCalendar;
+        }
+
     }
 }

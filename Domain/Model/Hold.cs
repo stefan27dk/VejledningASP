@@ -6,6 +6,13 @@ namespace Domain.Model
 {
     public class Hold
     {
-        public int Id { get; set; }      
+
+        public Hold(Guid Id) // Constructor
+        {
+            this.Id = Id;
+        }
+
+
+        public Guid Id { get; private set; }      
     }
 }

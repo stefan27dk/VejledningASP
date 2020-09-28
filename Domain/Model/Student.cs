@@ -6,9 +6,18 @@ namespace Domain.Model
 {
    public class Student
     {
-        public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public Guid Id { get; private set; }
+        public string FirstName { get; private set; }
+        public string LastName { get; private set; }
+
+
+        public Student(Guid Id, string FirstName, string LastName)  // Constructor
+        {
+            this.Id = Id;
+            this.FirstName = FirstName;
+            this.LastName = LastName;
+        }
+
 
         public ICollection<Hold> MyProperty { get; set; }
     }
